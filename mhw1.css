@@ -1,0 +1,390 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+#header {
+    display: flex;
+    height: 49px;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+    font-size: 0.9rem;
+    border-bottom: 1px solid lightgray;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+.left_header {
+    width: 30vw;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.servizio_clienti:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.right_header {
+    width: 70vw;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_header a:hover{
+    color: red;
+}
+
+.right_header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.right_header img {
+    width: auto;
+    height: 25px;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 10px 10px;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.categorie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+
+.categorie li {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px 5px;
+}
+
+.categorie li:hover{
+    color: red;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search h1 {
+    font-size: 1rem;
+}
+
+.search h1:hover{
+    color: red;
+}
+
+.search img{
+    margin-left: 10px;
+    height: 20px;
+    width: auto;
+}
+
+#mobile_header, #mobile_nav {
+    display: none;
+}
+
+.banner img{
+    height: auto;
+    width: 100%;
+}
+
+#menu {
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 20px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #header, #nav{
+        display: none;
+    }
+
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+
+    #mobile_header{
+        margin: 10px 5px 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #mobile_header .carrello img, .logo img{
+        height: 50px;
+        width: auto;
+    }
+
+    #mobile_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 15px 0;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border: 1px solid lightgray;
+        border-radius: 30px;
+        padding: 5px 10px;
+        width: 80%;
+    }
+    
+    .search-bar input {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        flex-grow: 1;
+        padding: 5px;
+    }
+    
+    .search-bar button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .search-bar img {
+        height: 20px;
+        width: auto;
+        flex-grow: 1;
+    }
+}
+
+.ultime_uscite, .novita_card_game, .novita_preordini{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.2rem;  
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.article:hover{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 2px 3px 2px 3px lightgray;
+}
+
+.image_container {
+    position: relative;
+}
+
+.image_container img {
+    height: 350px;
+    width: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255,0,0,0.8);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.wishlist{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: auto;
+}
+
+
+.wishlist img{
+    height: 40px;
+    width: auto;
+}
+
+.wishlist button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.article p{
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.article h1{
+    font-size: 1.2rem;
+}
+
+.add_to_cart button{
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.add_to_cart button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 2px 3px 2px 3px lightgray;
+}
+
+@media (max-width: 768px) {
+    section{
+        margin-bottom: 0px;
+    }
+    .ultime_uscite, .novita_card_game, .novita_preordini{
+        border-bottom: 1px solid black;
+    }
+    .article{
+        margin: 30px 0;
+    }
+    .image_container img{
+        height: 300px;
+        width: auto;
+    }
+    .wishlist img{
+        height: 40px;
+        width: auto;
+        border: none;
+    }
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 48px;
+    background-color: #f5f6fa;
+    font-size: 1rem;
+}
+
+.contatti, .prodotti, .informazioni, .account {
+    display: flex;
+    flex-direction: column;
+}
+
+.prodotti h2, .informazioni h2, .account h2 {
+    font-size: 16px;
+}
+
+.contatti ul, .prodotti ul, .informazioni ul, .account ul {
+    list-style-type: none;
+    color: gray;
+    padding: 0;
+}
+
+.contatti img{
+    height: 120px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    #footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .contatti {
+        display: none;
+    }
+
+    .contatti ul, .prodotti ul, .informazioni ul, .account ul {
+        display: none;
+    }
+    
+}
